@@ -24,7 +24,7 @@ html{
 .formulario{
 
     scroll-snap-align: center;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: always;  
 
 }
 
@@ -35,7 +35,7 @@ html{
 body{
     font-size: 16px; /*1rem = 10x*/
     font-family: 'Roboto Condensed', sans-serif;
-    background-image: linear-gradient(to bottom, var(--Blanco), var(--GrisClaro));
+    background-image: linear-gradient(to top, var(--Blanco), var(--GrisClaro));
     
 }
 
@@ -46,10 +46,11 @@ body{
     margin-left: auto;
     margin-bottom: 0;
 }
+
 .boton{
     padding: 15px 30px;
 	background-color: var(--GrisClaro);
-	color: rgb(0, 0, 0);
+	color: var(--Negro);
 	border: none;
 	font-size: 20px;
 	border-radius: 50px;
@@ -62,6 +63,11 @@ body{
 }
 
 
+@media (min-width: 768px){
+    .boton{
+        width: auto;;
+    }
+}
 
 .boton:hover {
 	background-color: #a5a5a5;
@@ -75,7 +81,10 @@ body{
     box-shadow: 0 4px 8px 0 rgba(122,122,122,0.48);
     background-color: var(--Blanco);
     padding: 2rem;
+    border-radius: 1rem;
 }
+
+
  /* Tipografias */
 
 h1{
@@ -98,7 +107,7 @@ h1,h2,h3{
     text-align: center;
 }
 
-
+/* Titulos */
 
 .titulo span{
     font-size: 2rem;
@@ -109,23 +118,15 @@ h1,h2,h3{
 /*Utilidaes*/
 
 
-/* */
 
+/* Navegacion Pirncipal*/
 .nav-bg{
     background-color: var(--AzulGrisaceo);
-    padding: 1rem 0;
-    
 }
 
 .navegacion-principal{
     flex-direction: column;
-    display: block;
-    text-align: center;
-    color: var(--Blanco);
-    text-decoration: none;
-    font-size: 2rem;
-   
-    
+    display: flex;
 }
 
 @media(min-width: 768px){
@@ -140,7 +141,7 @@ h1,h2,h3{
     text-decoration: none;
     font-size: 1.8rem;
     margin-right: 10rem;
-    
+    padding: 1rem 0;
 }
 
 .navegacion-principal a:hover{
