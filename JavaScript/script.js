@@ -23,7 +23,7 @@ if(formulario){
         }
 
         const datosFormulario = {nombre, telefono, correo, mensaje};
-        localStorage.setItem('ContactoSebas', JSON.stringify(datosFormulario));
+        localStorage.setItem('ContactoSebastian', JSON.stringify(datosFormulario));
 
         alert('Mensaje enviado correctamente');
         formulario.reset();
