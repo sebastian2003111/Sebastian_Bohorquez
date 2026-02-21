@@ -320,20 +320,6 @@ h1,h2,h3{
     transition: all .5s ease;
 }
 
-.texto-imagen {
-    font-size: 150px; /* Tamaño grande */
-    font-weight: 900;
-    text-align: center;
-
-    background-image: url("/img/hero.png"); /* Tu imagen */
-    background-size: cover;
-    background-position: center;
-
-    -webkit-background-clip: text;
-    background-clip: text;
-
-    color: transparent;
-}
 
 
 /**  ========== CONTADORES =======**/
